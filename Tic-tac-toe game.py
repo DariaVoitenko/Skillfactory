@@ -27,7 +27,7 @@ def ask():
             print("   Введите две координаты")
             continue
         x, y = coords
-        if not(x.isdigit()) and not(y.isdigit()):
+        if not(x.isdigit()) and not(y.isdigit()) or (x.isalpha()) or (y.isalpha()):
             print("   Введите числовые показатели!")
             continue
         x, y = int(x), int(y)
